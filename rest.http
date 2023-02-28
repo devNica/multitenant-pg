@@ -1,0 +1,14 @@
+#test
+GET http://localhost:8200/test HTTP/1.1
+
+
+### register
+POST http://localhost:8200/auth/tenant HTTP/1.1
+Content-Type: application/json
+
+{
+    "fullname": "John Doe",
+    "email": "jdoe@test.com",
+    "password": "Lamismadesiempre",
+    "schemaName": "doesolutions"
+}
